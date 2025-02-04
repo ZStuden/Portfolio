@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="port_pg">
+
+	<div class= "top_nav_links">
+		<a href="index.html">
+			<button class="home_btn"><img src="images/logo_3.png"></button>
+		</a>
+		<ul class="top_nav_links_ind">
+			<li><a href="character.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+
+	</div>
+
+	<div>
+
+			<div class="header_name_port">
+				<p class="port_text">Portfolio</p>
+			</div>
+		
+			<!--<img src="images/sabioface.png" alt="guy" width="650px">*/ -->
+		</br>
+			
+		<div class="tab">
+
+			<button class="tablinks" onclick="openContent(event, '3Dmodel')" id="defaultOpen">3D Modeling</button>
+			<button class="tablinks" onclick="openContent(event, '3DAni')">3D Animation</button>
+			<button class="tablinks" onclick="openContent(event, 'jscript')">JavaScript</button>
+			<button class="tablinks" onclick="openContent(event, 'py')">Python</button>
+			<button class="tablinks" onclick="openContent(event, 'w/a')">Web/App Design</button>
+
+		</div>
+
+		<div id="3Dmodel" class="tabcontent">
+			<div class="port_img_container">
+				<div class="model_img">
+					<div class="img_panel active" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1aZ_6rCxUalFi6NG1RKG1Zh2IYmtfekF0);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1A_RSh8hiPfqSsJ1RTEcdtsagsOFsMXf7);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1rAOMRqHWSWzRAxmgr_v-U3kUmR5ePd3w);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1Vv69OpEDpcOtEolBZNBm3mUFZdHFz1Wk);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1VeGbjoRzL0I3L1_W90Pt2Z-B1UWrIO36);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1W2wDcdJdO5iINcLsL7kGPULt2GNOQgTh);">
+						<h1>hi expanding cards</h1>
+						<li class="img_details"><a href="portfolio.html">Details</a></li>
+					</div>
+			</div>
+			</div>
+
+		</div>
+		<div id="3DAni" class="tabcontent">
+			<div class="game_background">
+				<iframe class="game_container" src="https://drive.google.com/file/d/1RE_1xWb3uKaZrdg54poSMVJjNZwiGBiJ/preview" width="640" height="480" allow="autoplay"></iframe>
+				<p class="java_des">This is a short film I made for my Animation class; it was submitted to the BMCC 2024 Film Festival.</p>
+			</div>
+		</div>
+		<div id="jscript" class="tabcontent">
+			<div class="game_background">
+				<iframe class="game_container" src="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35/index.html" width="600px" height="400px"></iframe>
+			<p class="java_des">This is a simple JavaScript game I created for my MMP 210 Class using the p5 library.</p>
+				<div>
+					<a class="download_texts_java" onclick="confirm_function()" href="Java/ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35.zip" download="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35">Download Files</a>
+				</div>
+			</div>
+		</div>
+		<div id="py" class="tabcontent">
+			<div class="game_background">
+				<div class="code_imgs">
+					<div class="statecode">
+						<img src="images/python_code_img1 (1).png" alt="fire" width="650px">
+						<a class="download_texts_code" onclick="confirm_function()" href="Python/Moviecode.zip" download="moviecode">Download File</a>
+					</div>
+					<div class="moviecode">
+						<img src="images/python_code_img1 (2).png" alt="fire" width="650px">
+						<a class="download_texts_code" onclick="confirm_function()" href="Python/Pythonstatelookup.zip" download="Pythonstatelookup">Download File</a>
+					</div>
+				</div>
+				<p class="java_des">These are some Python programs created for my Principles of Information Technology and Computation course.</p>
+			</div>
+		</div>
+		<div id="w/a" class="tabcontent">
+			<div class="figma_links">
+				<h1>Figma Files</h1>
+				<div class="port_links_tab">
+					<li class="web_links"><a href="https://www.figma.com/design/3a36ZvXG35plIv4fvHgchz/Zsabio-MMP-200-Final?m=auto&t=drT9bhxHf2YzTYuQ-1" target="_blank">Mobile App Design</a></li>
+					<li class="web_links"><a href="https://www.figma.com/design/F8K0HDjxsy4xtE88drrbEv/Design-Exercise-5-Responsive-Layout-(Copy)?node-id=1-27&t=kMbUzgsp6o2bVWvU-1" target="_blank">Responsive Website Design</a></li>
+					<li class="web_links"><a href="https://www.figma.com/design/lRnL0Gt7N2FxPzD6XQ1osd/portfolio-design?node-id=0-1&t=kMbUzgsp6o2bVWvU-1" target="_blank">Portfolio Website Design</a></li>
+					<li class="web_links"><a href="https://www.figma.com/design/0QvS6MVtqCE6NJ0qaVDl4p/Midterm-(Zen)?node-id=2-6&t=kMbUzgsp6o2bVWvU-1" target="_blank">Cuny Arts Website Redesign</a></li>
+				</div>
+			</div>
+			<div class="rectangle_5_port"></div>
+		</div>
+
+		<div class="rectangle_4_port"></div>
+
+	</div>
+
+<div class="bttmbar">
+
+	<p class="mename">Designed Zen Sabio</p>
+
+</div>
+
+<script>
+	function openContent(evt, contents) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+const panels = document.querySelectorAll(".img_panel");
+
+panels.forEach((panel) => {
+	panel.addEventListener("click", () => {
+		removeActiveClasses();
+		panel.classList.add("active");
+	});
+});
+
+function removeActiveClasses() {
+	panels.forEach((panel) => {
+		panel.classList.remove("active");
+	})
+}
+</script>
+
+</body>
+
+</html>
