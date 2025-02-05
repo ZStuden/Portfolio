@@ -398,6 +398,13 @@ ul {
 	justify-content: center;
 	margin: 0 auto;
 }
+.tabcontent_2 {
+	display: none;
+    text-align: center;
+}
+.tabcontent_2.active {
+	display: block;
+}
 .code_imgs {
 	display: flex;
 	justify-content: center;
@@ -460,6 +467,8 @@ ul {
 }
 .figma_links {
 	display: block;
+	position: absolute;
+	top: 25%;
 }
 .port_links a {
 	display: block;
@@ -631,6 +640,8 @@ ul {
 	display: flex;
 	align-self: center;
 	justify-items: center;
+	flex-wrap: wrap;
+	margin-right: 0%;
 }
 .img_panel {
 	background-size: cover;
@@ -639,10 +650,12 @@ ul {
 	height: 50vh;
 	border-radius: 10px;
 	cursor: pointer;
-	flex: 0.5;
+	flex: 1 1 20px;
 	margin: 0.5%;
+	margin-left: 1%;
 	position: relative;
 	transition: all 700ms ease-in;
+	max-width: 100%;
 }
 .img_panel h1 {
 	font-family: Orbitron;
@@ -720,12 +733,15 @@ ul {
 		display: none;
 	}
 }
-/*@media (max-width: 2140px) {
-	.code_imgs {
+@media (max-width: 2140px) {
+	/*.code_imgs {
 		max-width: 66%;
 		margin-top: auto;
 	}
 	.tabcontent {
 		margin-top: -5%;
+	}*/
+	.img_panel h1 {
+		font-size: 15px;
 	}
 }

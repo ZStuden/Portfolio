@@ -40,38 +40,46 @@
 			<button class="tablinks" onclick="openContent(event, 'jscript')">JavaScript</button>
 			<button class="tablinks" onclick="openContent(event, 'py')">Python</button>
 			<button class="tablinks" onclick="openContent(event, 'w/a')">Web/App Design</button>
+			
 
 		</div>
 
 		<div id="3Dmodel" class="tabcontent">
-			<div class="port_img_container">
-				<div class="model_img">
-					<div class="img_panel active" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1aZ_6rCxUalFi6NG1RKG1Zh2IYmtfekF0);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
-					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1A_RSh8hiPfqSsJ1RTEcdtsagsOFsMXf7);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
-					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1rAOMRqHWSWzRAxmgr_v-U3kUmR5ePd3w);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
-					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1Vv69OpEDpcOtEolBZNBm3mUFZdHFz1Wk);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
-					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1VeGbjoRzL0I3L1_W90Pt2Z-B1UWrIO36);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
-					<div class="img_panel" style="background-image: url(https://drive.google.com/thumbnail?sz=w1000&id=1W2wDcdJdO5iINcLsL7kGPULt2GNOQgTh);">
-						<h1>hi expanding cards</h1>
-						<li class="img_details"><a href="portfolio.html">Details</a></li>
-					</div>
+			
+			<div class="tab">
+
+				<button class="tablinks" onclick="openNestedContent(event, 'train')" id="defaultNestedOpen">Train</button>
+				<button class="tablinks" onclick="openNestedContent(event, 'scooter')">Scooter</button>
+				<button class="tablinks" onclick="openNestedContent(event, 'Key')">Key</button>
+				<button class="tablinks" onclick="openNestedContent(event, 'l&k')">Lock & key</button>
+				<button class="tablinks" onclick="openNestedContent(event, 'rifle')">Rifle</button>
+
 			</div>
+
+			<div id="img_tab_links">
+				
+				<div id="train" class="tabcontent_2">
+					<img src="https://drive.google.com/thumbnail?sz=w1000&id=1aZ_6rCxUalFi6NG1RKG1Zh2IYmtfekF0" alt="">
+				</div>
+	
+				<div id="scooter" class="tabcontent_2">
+					<img src="https://drive.google.com/thumbnail?sz=w1000&id=1rAOMRqHWSWzRAxmgr_v-U3kUmR5ePd3w" alt="">
+				</div>
+	
+				<div id="Key" class="tabcontent_2">
+					<img src="https://drive.google.com/thumbnail?sz=w1000&id=1A_RSh8hiPfqSsJ1RTEcdtsagsOFsMXf7" alt="">
+				</div>
+	
+				<div id="l&k" class="tabcontent_2">
+					<img src="https://drive.google.com/thumbnail?sz=w1000&id=1Vv69OpEDpcOtEolBZNBm3mUFZdHFz1Wk" alt="">
+				</div>
+	
+				<div id="rifle" class="tabcontent_2">
+					<img src="https://drive.google.com/thumbnail?sz=w1000&id=1VeGbjoRzL0I3L1_W90Pt2Z-B1UWrIO36" alt="">
+				</div>
+				
 			</div>
+		</div>
 
 		</div>
 		<div id="3DAni" class="tabcontent">
@@ -132,6 +140,23 @@
   var i, tabcontent, tablinks;
 
   tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+function openNestedContent(evt, contents) {
+  var i, tabcontent_2, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent_2");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
