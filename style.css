@@ -15,15 +15,15 @@ body {
 	margin: 0%;
 }
 .home_pg {
-	background-image: url("images/background_img_grain(medium).jpg");
+	background-image: url("images/background_img.jpg");
 	background-color: #ffffff;
 }
 .port_pg {
-	background-image: url("images/background_img_two_1(medium).jpg");
+	background-image: url("images/background_img_two.jpg");
 }
 .res_pg {
 	background-color: #ffffff;
-	background-image: url("images/background_img_three_1(medium).jpg");
+	background-image: url("images/background_img_three.jpg");
 }
 .top_nav_links {
 	position: relative;
@@ -207,7 +207,6 @@ body {
 	background: #000000a3;
 }
 .homeimg {
-	/*box-shadow: 0 10px 35px rgba(0,0,0,0.7 );*/
 	padding-right: 10%;
 	padding-left: 60%;
 	padding-top: 5%;
@@ -216,9 +215,7 @@ body {
 }
 .homeimg img {
 	background: url(images/code_plant.png) lightgray 50% / cover no-repeat;
-	drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 	box-shadow: 0 10px 35px rgba(0,0,0,0.7 );
-	trasform: translate(-50%,-50%);
 	border-radius: 10px;
 	width: 100%;
 	height: 100%;
@@ -300,7 +297,6 @@ ul {
 	left: 0;
 	bottom: 32px;
 	transition: all 0.5s ease;
-	poOrbitron-events: none;
 }
 .web_links:hover a::after {
 	width: 100%;
@@ -329,7 +325,6 @@ ul {
 	left: 0;
 	bottom: 32px;
 	transition: all 0.5s ease;
-	poOrbitron-events: none;
 	
 }
 .port_underline_main:hover a::after {
@@ -345,7 +340,6 @@ ul {
 	left: 0;
 	bottom: 32px;
 	transition: all 0.5s ease;
-	poOrbitron-events: none;
 	
 }
 .res_underline_main:hover a::after {
