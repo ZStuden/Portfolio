@@ -17,12 +17,24 @@ body {
 .home_pg {
 	background-image: url("images/background_img.jpg");
 	background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+	z-index: 1;
 }
 .port_pg {
 	background-image: url("images/background_img_two.jpg");
+	background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+	z-index: -2;
 }
 .res_pg {
-	background-color: #ffffff;
 	background-image: url("images/background_img_three.jpg");
 }
 .top_nav_links {
@@ -104,26 +116,27 @@ body {
 .header_name {
 	color: white;
 	font-family: Orbitron;
-	/*font-size: 128px;*/
 	font-size: clamp(30px, 5vw + 1rem, 110px);
 	font-style: normal;
 	font-weight: 700;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.61);
 	padding-left: 3.5%;
 	margin: 0;
-	word-spacing: 7%; 
+	word-spacing: 7%;
+	z-index: 2; 
 }
 .header_name_port {
 	color: white;
 	font-family: Orbitron;
-	/*font-size: 128px;*/
 	font-size: clamp(30px, 3vw + 1rem, 110px);
 	font-style: normal;
 	font-weight: 700;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.61);
 	padding-left: 2.5%;
 	margin: 0;
-	word-spacing: 7%; 
+	word-spacing: 7%;
+	position: relative;
+	z-index: 5; 
 }
 .header_name p {
 	margin-top: 2%;
@@ -157,7 +170,7 @@ body {
 	padding-top: 25%;
 	padding-bottom: 3%;
 	background: hsla(117, 35%, 64%, 0.65);
-	z-index: -1;
+	z-index: 0;
 	box-shadow: 0px 4.88px 4.88px 0px rgba(0, 0, 0, 0.25) inset;
 }
 .rectangle_2 {
@@ -168,7 +181,7 @@ body {
 	margin-top: 3%;
 	padding-left: 10%;
 	padding-top: 25%;
-	z-index: -1;
+	z-index: 1;
 	background: rgba(155, 109, 207, 0.65);
 }
 .rectangle_3 {
@@ -179,7 +192,7 @@ body {
 	padding-left: 21%;
 	padding-top: 45%;
 	height: 7%;
-	z-index: -2;
+	z-index: 1;
 	background: rgb(41, 41, 41, 0.64);
 	box-shadow: 0px 4.88px 4.88px 0px rgba(0, 0, 0, 0.25) inset;
 }
@@ -192,7 +205,7 @@ body {
 	padding-left: 23%;
 	padding-top: 44.2%;
 	height: 5.6%;
-	z-index: -2;
+	z-index: 0;
 	background: #000000a3;
 }
 .rectangle_5_port {
@@ -203,7 +216,7 @@ body {
 	padding-left: 23%;
 	padding-top: 44.2%;
 	height: 5.6%;
-	z-index: -2;
+	z-index: 0;
 	background: #000000a3;
 }
 .homeimg {
@@ -211,7 +224,7 @@ body {
 	padding-left: 60%;
 	padding-top: 5%;
 	position: absolute;
-	z-index: 0;
+	z-index: 2;
 }
 .homeimg img {
 	background: url(images/code_plant.png) lightgray 50% / cover no-repeat;
@@ -256,6 +269,8 @@ ul {
 }
 .port_res {
 	margin-left: 0%;
+	z-index: 5;
+	position: relative;
 }
 .underlinks {
 	margin-top: 15%;
@@ -353,9 +368,11 @@ ul {
 	
 }
 .tab {
+	position: relative;
 	padding-left: 0%;
 	margin-left: 2.5%;
 	float: left;
+	z-index: 5;
 
 }
 .tab_2 {
@@ -365,6 +382,7 @@ ul {
 	top: 20%;
 	background: #00000085;
 	border-radius: 10px;
+	z-index: 5;
 }
 .rectange_model_header {
 	background: #000000;
@@ -502,6 +520,7 @@ ul {
 	display: block;
 	position: absolute;
 	top: 25%;
+	z-index: 5;
 }
 .port_links a {
 	display: block;
