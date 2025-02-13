@@ -381,9 +381,14 @@ ul {
 	justify-content: space-between;
 	position: absolute;
 	top: 20%;
-	background: #47474785; 
+	background: #00000085; 
 	border-radius: 10px;
 	z-index: 5;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#tab_nested_links {
+	padding: 7px;
 }
 .rectange_model_header {
 	background: #000000;
