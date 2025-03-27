@@ -446,6 +446,7 @@ ul {
 	flex-direction: column;
 }
 .d-texts {
+	color: white;
 	position: relative;
 	font-family: Poppins;
 	font-size: 20px;
