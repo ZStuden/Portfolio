@@ -445,10 +445,23 @@ ul {
 	display: flex;
 	flex-direction: column;
 }
-.tabcontent_2 p {
+.d-texts {
 	position: relative;
 	font-family: Poppins;
 	font-size: 20px;
+	font-weight: 200;
+	width: 20%;
+	background: rgba(0, 0, 0, 0.71);
+	padding: 1%;
+	right: 1%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	border-radius: 10px;
+}
+.fig-texts {
+	position: relative;
+	font-family: Poppins;
+	font-size: 1em;
 	font-weight: 200;
 	width: 20%;
 	background: rgba(0, 0, 0, 0.71);
