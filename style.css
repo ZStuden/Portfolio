@@ -675,8 +675,7 @@ ul {
 	font-weight: 400;
 	font-size: 20px;
 	color: #ffffff;
-	width: 60%;
-	text-align: center;
+	width: 90%;
 }
 .about_container {
 	float: right;
@@ -711,7 +710,7 @@ ul {
 	border-radius: 10px;
 	height: auto;
 	position: absolute;
-	top: 20%;
+	top: 10%;
 }
 .model_img {
 	display: flex;
