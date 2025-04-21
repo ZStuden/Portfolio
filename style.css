@@ -459,6 +459,11 @@ ul {
 	border-radius: 10px;
 	color: white;
 }
+.home_pg_txt {
+	background-color: #000000bb;
+	padding: 20px;
+	border-radius: 10px;
+}
 .fig-texts {
 	position: relative;
 	font-family: Poppins;
