@@ -55,7 +55,7 @@ function preload() {
   starPointsprite = loadImage("sprites/Piskel star (1).gif");
   starPointspriteCollected = loadImage("sprites/Piskel star collected.gif");
 
-  /* backGroundmusic = loadSound("audio/gameAudio.mp3"); */
+  backGroundmusic = loadSound("audio/gameAudio.mp3");
   attackSound = loadSound("audio/Hit_hurt 3.mp3");
   pickupStarSound = loadSound("audio/pickup_star.wav");
 
