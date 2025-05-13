@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="port_pg">
+
+	<div class= "top_nav_links">
+		<a href="index.html">
+			<button class="home_btn"><img src="images/logo_3.png" alt="home-icon"></button>
+		</a>
+		<ul class="top_nav_links_ind">
+			<li><a href="character.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+
+	</div>
+
+	<div>
+
+		<div class="header_name_port">
+			<p class="port_text">Web Design</p>
+		</div>
+		
+			<!--<img src="images/sabioface.png" alt="guy" width="650px">*/ -->
+
+			<div id="img_tab_links">
+				
+				<div class="mobile-tab-buttons">
+
+					<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'mobile-app')" id="defaultNestedOpen">Mobile App Design</button>
+					<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'cuny-arts')">CUNY Arts Redesign</button>
+					<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'resp-design')">Responsive Design</button>
+					<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'port-design')">Program Search</button>
+	
+				</div>
+	
+				<div id="img_tab_links">
+					
+					<div id="mobile-app" class="tabcontent_2">
+						<img src="images/screenshot2025-03-2704201.png" alt="">
+	
+						<div class="fig-texts">
+							<p><strong>Issue:</strong> Students often struggle with finding and keeping track of class schedules at the start of a new semester.</p>
+	
+							<p><strong>Mission:</strong> To create an intuitive mobile app that simplifies schedule access using visual cues and a clean layout.</p>
+								
+							<p><strong>Outcome</strong>: Designed a user-friendly app with color-coded cards and consistent visuals that streamline the scheduling process.</p>
+	
+							<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/3a36ZvXG35plIv4fvHgchz/Zsabio-MMP-200-Final?m=auto&t=drT9bhxHf2YzTYuQ-1">View File</a>
+						</div>
+	
+					</div>
+		
+					<div id="cuny-arts" class="tabcontent_2">
+						<img src="images/screenshot2025-03-27104348.png" alt="">
+	
+						<div class="fig-texts">
+							<p><strong>Issue:</strong> The original website lacked navigation clarity, placing all content on a single page and overwhelming users.</p>
+	
+							<p><strong>Mission:</strong> To redesign the interface with a structured homepage and subcategories that guide users more effectively.</p>
+								
+							<p><strong>Outcome</strong>: Created a cleaner, more intuitive layout that enhances usability and allows visitors to quickly find what they need.</p>
+	
+							<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/0QvS6MVtqCE6NJ0qaVDl4p/Midterm-(Zen)?node-id=2-6&t=kMbUzgsp6o2bVWvU-1">View File</a>
+						</div>
+	
+					</div>
+		
+					<div id="resp-design" class="tabcontent_2">
+						<img src="images/screenshot2025-03-27104313.png" alt="">
+	
+						<div class="fig-texts">
+							<p><strong>Issue:</strong>  New streaming platforms need clean, responsive designs that work across devices while offering a unique identity.</p>
+	
+							<p><strong>Mission:</strong> To design a responsive website for a streaming service that blends familiar layouts with original design touches.</p>
+								
+							<p><strong>Outcome</strong> Produced a flexible layout system inspired by major platforms, supported by a structured grid for visual clarity.</p>
+	
+							<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/F8K0HDjxsy4xtE88drrbEv/Design-Exercise-5-Responsive-Layout-(Copy)?node-id=1-27&t=kMbUzgsp6o2bVWvU-1">View File</a>
+						</div>
+	
+					</div>
+		
+					<div id="port-design" class="tabcontent_2">
+						<img src="images/cuny-saerch-img.png" alt="">
+	
+						<div class="fig-texts">
+	
+							<p>This site is designed to search for CUNY programs related to media design and to assist prospective CUNY students in finding a design or animation program at a CUNY college.</p>
+	
+	
+							<a target="_blank" rel="noopener noreferrer" href="https://zstuden.github.io/mmp240_Zsabio/Final/index.html">View Site</a>
+						</div>
+	
+					</div>
+					
+				</div>
+		</div>
+
+
+		<div class="rectangle_4_port"></div>
+
+<div class="bttmbar">
+
+	<p class="mename">Designed Zen Sabio</p>
+
+</div>
+
+<script>
+	function openContent(evt, contents) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+function openNestedContent(evt, contents) {
+  var i, tabcontent_2, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent_2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+const panels = document.querySelectorAll(".img_panel");
+
+panels.forEach((panel) => {
+	panel.addEventListener("click", () => {
+		removeActiveClasses();
+		panel.classList.add("active");
+	});
+});
+
+function removeActiveClasses() {
+	panels.forEach((panel) => {
+		panel.classList.remove("active");
+	})
+}
+</script>
+
+</body>
+
+</html>

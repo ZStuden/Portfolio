@@ -11,7 +11,6 @@ body {
 main {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	padding-top: 50px;
 }
 
 .body p{
@@ -113,6 +112,7 @@ main {
 .header_container {
 	display: inline;
 	justify-content: space-between;
+	padding-top: 50px;
 }
 .header_name {
 	color: white;
@@ -182,16 +182,15 @@ main {
 	background: #000000a3;
 }
 .homeimg {
-	padding: 10px 60px 180px 180px;
 	z-index: 2;
+	padding-left: 26%;
 }
 .homeimg img {
 	background: url(images/code_plant.png) lightgray 50% / cover no-repeat;
 	box-shadow: 0 10px 35px rgba(0,0,0,0.7 );
-	border-radius: 10px;
+/* 	border-radius: 10px; */
 	width: 100%;
-	max-width: 550px;
-	min-width: 300px;
+	max-width: 716px;
 }
 .res_img_main {
 	display: flex;
@@ -345,6 +344,29 @@ ul {
 	padding-left: 10%;
 	padding-right: 10%;
 }
+
+.tab li a {
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	font-family: Quicksand;
+	color: white;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+	padding-bottom: 23%;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.tab li {
+	list-style-type: none;
+}
+
 #tab_nested_links {
 	padding: 7px;
 }
@@ -731,12 +753,26 @@ ul {
 	opacity: 100%;
 	transition: 1s;
 }
-@media (max-width: 605px) {
+
+.mobile-tab-buttons {
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.mobile-tab-buttons button {
+	font-family: Poppins;
+	color: white;
+	background-color: #20202059;
+	border: none;
+	outline: none;
+}
+
+@media (max-width: 935px) {
 
 	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		display: grid;
+    	grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		justify-items: center;
 		
 	}
 
@@ -770,6 +806,11 @@ ul {
 		padding-left: 0;
 		margin: 0%;
 	}
+
+	.port_res {
+		padding: 0% 10%;
+	}
+
 	.underlinks {
 		display: flex;
 		flex-direction: row;
@@ -830,6 +871,47 @@ ul {
 	}
 	.rectangle_5_port {
 		display: none;
+	}
+
+	.tab-mobile {
+		display: none;
+	}
+
+	.port_text {
+		font-size: 2.5em;
+	}
+
+	.tab_2 {
+		display: none;
+	}
+
+	.tab li a {
+		display: flex;
+	}
+
+	.tabcontent_2 {
+		flex-direction: column;
+		padding: 0% 3%;
+	}
+
+	.tabcontent_2 img {
+		width: 100%;
+		max-width: 100%;
+		padding-bottom: 3%;
+	}
+
+	.tabcontent_2 iframe {
+		width: 100%;
+		padding-bottom: 3%;
+	}
+
+	.fig-texts {
+		width: 100%;
+		margin-bottom: 15%;
+	}
+
+	#tab_nested_links {
+		padding: 1% 10px;
 	}
 }
 @media (max-width: 2140px) {

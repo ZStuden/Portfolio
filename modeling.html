@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="port_pg">
+
+	<div class= "top_nav_links">
+		<a href="index.html">
+			<button class="home_btn"><img src="images/logo_3.png" alt="home-icon"></button>
+		</a>
+		<ul class="top_nav_links_ind">
+			<li><a href="character.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+
+	</div>
+
+	<div>
+
+		<div class="header_name_port">
+			<p class="port_text">Modeling</p>
+		</div>
+		
+			<!--<img src="images/sabioface.png" alt="guy" width="650px">*/ -->
+			
+			
+			<div class="mobile-tab-buttons">
+
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'train')" id="defaultNestedOpen">Train</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'scooter')">Scooter</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'Key')">Key</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'l&k')">Lock & key</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'rifle')">Rifle</button>
+
+			</div>
+
+			<div id="img_tab_links">
+				
+				<div id="train" class="tabcontent_2">
+					<img src="images/trainproject.jpg" alt="">
+					<div class="fig-texts">
+						<p>This is a work-in-progress model of a train inspired by the A train. I used a reference image as the base model and adapted it into a skyrail train. I still need to add lighting, textures, and a background environment. My goal with this piece is to capture a retro-futuristic feel while planning to adopt a more realistic overall style compared to the more stylized appearance of my other works.</p>
+						<p>Designed in Blender</p>
+					</div>
+				</div>
+	
+				<div id="scooter" class="tabcontent_2">
+					<img src="images/scooter_img.png" alt="">
+					<div class="fig-texts">
+						<p> This is a scooter I designed. This was my second project, made with Cinema 4D. It was primarily constructed using primitives, with a couple of modifiers for the wheels and board. I used textures from the C4D library. The rendering was done using Redshift.</p>
+						<p>Designed in Cinema 4D</p>
+					</div>
+				</div>
+	
+				<div id="Key" class="tabcontent_2">
+					<img src="images/key_render_lights_text_01_0001.png" alt="">
+					<div class="fig-texts">
+						<p>This is a key designed for a scene in my 3D animation project where a door is unlocked. The design was inspired by an antique key. My aim was to create a key that combines both fantasy and realism, blurring the line between imagination and reality. To start the design process, I chose a reference image, which acted as a foundation. I then incorporated intricate details, such as the crystal in the center of the key and the one attached to the end of the chain. Most of the work on these details was accomplished using the lathe tool in Cinema 4D.</p>
+						<p>Designed in Cinema 4D</p>
+					</div>
+				</div>
+	
+				<div id="l&k" class="tabcontent_2">
+					<img src="images/Key-Render0228.jpg" alt="">
+					<div class="fig-texts">
+						<p> This is a screenshot of the interior of my 3D animation project. The atmosphere of the interior environment is inspired by an abandoned house. I developed this atmosphere using a mood board and reference images. I also created all the models and textures, which I designed in Photoshop with the paint and smudge tools to achieve a hand-painted look.</p>
+						<p>Designed in Cinema 4D</p>
+					</div>
+				</div>
+	
+				<div id="rifle" class="tabcontent_2">
+					<img src="images/rifle_render2_28_25.png" alt="">
+					<div class="fig-texts">
+						<p> This image showcases a rifle model I created using a reference image. The design is intentionally crafted to match a low-poly and stylized aesthetic. My primary goal with this model is to familiarize myself with Blender and improve my skills in the software. To create the model, I first started with a circle in Blender as the base for the stock. I then built forward to create the entire stock, while the barrel began with a simple cylinder. The model's main use will be for FPS animations.</p>
+						<p>Designed in Blender</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div class="rectangle_4_port"></div>
+
+<div class="bttmbar">
+
+	<p class="mename">Designed Zen Sabio</p>
+
+</div>
+
+<script>
+	function openContent(evt, contents) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+function openNestedContent(evt, contents) {
+  var i, tabcontent_2, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent_2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(contents).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+const panels = document.querySelectorAll(".img_panel");
+
+panels.forEach((panel) => {
+	panel.addEventListener("click", () => {
+		removeActiveClasses();
+		panel.classList.add("active");
+	});
+});
+
+function removeActiveClasses() {
+	panels.forEach((panel) => {
+		panel.classList.remove("active");
+	})
+}
+</script>
+
+</body>
+
+</html>
