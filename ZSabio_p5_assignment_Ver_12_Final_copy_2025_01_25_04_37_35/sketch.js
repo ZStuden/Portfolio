@@ -72,6 +72,8 @@ function preload() {
   logoImg = loadImage("sprites/tilelogo.gif");
 }
 
+let musicPlaying = false;
+
 function setup() {
   createCanvas(600, 400);
 
@@ -80,7 +82,7 @@ function setup() {
   enemy1 = Enemy();
   points.push(Star());
 
-  backGroundmusic.loop(true);
+  /*backGroundmusic.loop(true);*/
 
   startButton = Button(75, 370, playButtonImg);
   controlsButton = Button(533, 370, instrButtonImg);
@@ -90,6 +92,14 @@ function setup() {
 
 function draw() {
   background(220);
+
+  if (gameState === 2 && !musicPlaying) {
+    backGroundmusic.loop();
+    musicPlaying = true;
+  } else if (gameState !== 2 && musicPlaying) {
+    backGroundmusic.stop();
+    musicPlaying = false;
+  }
 
   if (gameState == 0) {
     startMenu();
@@ -141,6 +151,11 @@ function gameOver() {
   image(gameOverScreen, width / 2, height / 2);
   image(logoImg, width / 2, height - 100);
 
+  if (backGroundmusic.isPlaying()) {
+    backGroundmusic.stop();
+    musicPlaying = false;
+  }
+
   tryAgainButton.display();
 
   titleButton.display();
@@ -157,6 +172,11 @@ function gameOver() {
 function winScreen() {
   image(winScreenImg, width / 2, height / 2);
   image(logoImg, width / 2, height - 100);
+
+  if (backGroundmusic.isPlaying()) {
+    backGroundmusic.stop();
+    musicPlaying = false;
+  }
 
   tryAgainButton.display();
 
