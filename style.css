@@ -533,6 +533,11 @@ ul {
 	font-size: 1em;
 }
 
+.fig-texts p:nth-child(2) {
+	border-top: 1px solid white;
+	padding-top: 13px;
+}
+
 .fig-texts a {
 	display: flex;
 	justify-content: center;
