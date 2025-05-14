@@ -1056,6 +1056,11 @@ ul {
 		font-size: 2.5em;
 	}
 
+	.tab {
+		z-index: 0;
+		padding-bottom: 30px;
+	}
+
 	.tab_2 {
 		display: none;
 	}
@@ -1084,9 +1089,7 @@ ul {
 	.fig-texts {
 		width: 100%;
 		max-width: 600px;
-		margin-bottom: 15%;
-		margin: 0 auto 15%; 
-		text-align: center;
+		margin-bottom: 15%; 
 		padding: 15px 20px;
 	}
 
