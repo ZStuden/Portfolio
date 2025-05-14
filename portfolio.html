@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +9,20 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
 </head>
+
 <body class="port_pg">
 
-	<div class= "top_nav_links">
+	<div class="top_nav_links">
 		<a href="index.html">
 			<button class="home_btn"><img src="images/logo_3.png" alt="home-icon"></button>
 		</a>
 		<ul class="top_nav_links_ind">
 			<li><a href="character.html">Contact</a></li>
-			<li><a href="about.html">About</a></li>
+			<!-- <li><a href="about.html">About</a></li> -->
 		</ul>
 
 	</div>
@@ -28,9 +32,9 @@
 		<div class="header_name_port">
 			<p class="port_text">Portfolio</p>
 		</div>
-		
-			<!--<img src="images/sabioface.png" alt="guy" width="650px">*/ -->
-			
+
+		<!--<img src="images/sabioface.png" alt="guy" width="650px">*/ -->
+
 		<div class="tab tab-mobile">
 
 			<button class="tablinks" onclick="openContent(event, 'threeDmodel')" id="defaultOpen">3D Modeling</button>
@@ -38,7 +42,7 @@
 			<button class="tablinks" onclick="openContent(event, 'jscript')">JavaScript</button>
 			<button class="tablinks" onclick="openContent(event, 'py')">Python</button>
 			<button class="tablinks" onclick="openContent(event, 'w/a')">Web/App Design</button>
-			
+
 
 		</div>
 
@@ -50,288 +54,391 @@
 		</ul>
 
 		<div id="threeDmodel" class="tabcontent">
-			
+
 			<div class="tab_2">
 
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'train')" id="defaultNestedOpen">Train</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'scooter')">Scooter</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'train')"
+					id="defaultNestedOpen">Train</button>
+				<button class="tablinks" id="tab_nested_links"
+					onclick="openNestedContent(event, 'scooter')">Scooter</button>
 				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'Key')">Key</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'l&k')">Lock & key</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'rifle')">Rifle</button>
+				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'l&k')">Lock &
+					key</button>
+				<button class="tablinks" id="tab_nested_links"
+					onclick="openNestedContent(event, 'rifle')">Rifle</button>
 
 			</div>
 
 			<div id="img_tab_links">
-				
+
 				<div id="train" class="tabcontent_2">
 					<img src="images/trainproject.jpg" alt="">
 					<div class="fig-texts">
-						<p>This is a work-in-progress model of a train inspired by the A train. I used a reference image as the base model and adapted it into a skyrail train. I still need to add lighting, textures, and a background environment. My goal with this piece is to capture a retro-futuristic feel while planning to adopt a more realistic overall style compared to the more stylized appearance of my other works.</p>
-						<p>Designed in Blender</p>
+						<p>This is a work-in-progress model of a train inspired by the A train. I used a reference image
+							as the base model and adapted it into a skyrail train. I still need to add lighting,
+							textures, and a background environment. My goal with this piece is to capture a
+							retro-futuristic feel while planning to adopt a more realistic overall style compared to the
+							more stylized appearance of my other works.</p>
+						<p>Train (WIP) | 2024 | Blender | Cinema 4D</p>
 					</div>
 				</div>
-	
+
 				<div id="scooter" class="tabcontent_2">
 					<img src="images/scooter_img.png" alt="">
 					<div class="fig-texts">
-						<p> This is a scooter I designed. This was my second project, made with Cinema 4D. It was primarily constructed using primitives, with a couple of modifiers for the wheels and board. I used textures from the C4D library. The rendering was done using Redshift.</p>
-						<p>Designed in Cinema 4D</p>
+						<p> This is a scooter I designed. This was my second project, made with Cinema 4D. It was
+							primarily constructed using primitives, with a couple of modifiers for the wheels and board.
+							I used textures from the C4D library. The rendering was done using Redshift.</p>
+						<p>Simple Scooter | 2024 | Blender</p>
 					</div>
 				</div>
-	
+
 				<div id="Key" class="tabcontent_2">
 					<img src="images/key_render_lights_text_01_0001.png" alt="">
 					<div class="fig-texts">
-						<p>This is a key designed for a scene in my 3D animation project where a door is unlocked. The design was inspired by an antique key. My aim was to create a key that combines both fantasy and realism, blurring the line between imagination and reality. To start the design process, I chose a reference image, which acted as a foundation. I then incorporated intricate details, such as the crystal in the center of the key and the one attached to the end of the chain. Most of the work on these details was accomplished using the lathe tool in Cinema 4D.</p>
-						<p>Designed in Cinema 4D</p>
+						<p>This is a key designed for a scene in a 3D animation project in which a door is unlocked. The
+							design was inspired by an antique key. My aim was to create an object that combines both
+							fantasy and realism. To start the design process, I chose a reference image, which acted as
+							a foundation. I then created the intricate details, such as the crystal in the center of the
+							key and the one attached to the end of the chain. Most of the work on these details was
+							accomplished by using the lathe tool in Cinema 4D.
+						</p>
+						<p>Antique key | 2024 | Cinema 4D</p>
 					</div>
 				</div>
-	
+
 				<div id="l&k" class="tabcontent_2">
 					<img src="images/Key-Render0228.jpg" alt="">
 					<div class="fig-texts">
-						<p> This is a screenshot of the interior of my 3D animation project. The atmosphere of the interior environment is inspired by an abandoned house. I developed this atmosphere using a mood board and reference images. I also created all the models and textures, which I designed in Photoshop with the paint and smudge tools to achieve a hand-painted look.</p>
-						<p>Designed in Cinema 4D</p>
+						<p> This is a screenshot of the interior of my 3D animation project. The atmosphere of the
+							interior environment is inspired by an abandoned house. I developed this atmosphere using a
+							mood board and reference images. I also created all the models and textures, which I
+							designed in Photoshop with the paint and smudge tools to achieve a hand-painted look.</p>
+						<p>Lock & Key Interior | 2024 | Cinema 4D</p>
 					</div>
 				</div>
-	
+
 				<div id="rifle" class="tabcontent_2">
 					<img src="images/rifle_render2_28_25.png" alt="">
 					<div class="fig-texts">
-						<p> This image showcases a rifle model I created using a reference image. The design is intentionally crafted to match a low-poly and stylized aesthetic. My primary goal with this model is to familiarize myself with Blender and improve my skills in the software. To create the model, I first started with a circle in Blender as the base for the stock. I then built forward to create the entire stock, while the barrel began with a simple cylinder. The model's main use will be for FPS animations.</p>
-						<p>Designed in Blender</p>
+						<p> This image showcase a rifle model I created using a reference image. The design is
+							intentionally crafted to match a low-poly and stylized aesthetic. My primary goal with this
+							model was to familiarize myself with Blender and improve my skills in the software. To
+							create the model, I first started with a circle in Blender as the base for the stock. I then
+							built forward to create the entire stock, while the barrel began with a simple cylinder. The
+							model was created for FPS animations.</p>
+						<p>Rifle animation | 2025 | Blender</p>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 
+	</div>
+	<div id="3DAni" class="tabcontent">
+
+		<div class="tab_2">
+
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'rif-ani')"
+				id="defaultNestedOpen">Rifle Animation</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'l-k-ani')">Lock & Key
+				Animation</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'fire-ani')">Bonfire
+				Animation</button>
+
 		</div>
-		<div id="3DAni" class="tabcontent">
 
-			<div class="tab_2">
+		<div id="l-k-ani" class="tabcontent_2">
+			<iframe src="https://drive.google.com/file/d/1RE_1xWb3uKaZrdg54poSMVJjNZwiGBiJ/preview" width="640"
+				height="480" allow="autoplay"></iframe>
 
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'rif-ani')" id="defaultNestedOpen">Rifle Animation</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'l-k-ani')">Lock & Key Animation</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'fire-ani')">Bonfire Animation</button>
+			<div class="fig-texts">
+
+				<p>This is my first 3D animation project, and it was submitted to the BMMC Film Festival. The task
+					required me to create an animation where a key is broken from a rock and used to unlock a door to a
+					house. The atmosphere of the interior environment is inspired by an abandoned house. I developed
+					this atmosphere using a mood board and reference images. I also created all the models and textures,
+					which I designed in Photoshop with the paint and smudge tools to achieve a hand-painted look. The
+					animation was rendered as PNGs and imported into After Effects for additional work, including sound
+					and effects. I would say this project is not fully complete, as I want to address the camera
+					clipping through the wall and slow down the animation in Cinema 4D instead of After Effects to avoid
+					the choppiness seen in the video</p>
+				<p>Lock & Key | 2024 | Cinema 4D</p>
+
 
 			</div>
 
-			<div id="l-k-ani" class="tabcontent_2">
-				<iframe src="https://drive.google.com/file/d/1RE_1xWb3uKaZrdg54poSMVJjNZwiGBiJ/preview" width="640" height="480" allow="autoplay"></iframe>
+		</div>
+
+		<div id="fire-ani" class="tabcontent_2">
+			<iframe src="https://drive.google.com/file/d/1kp98D--Zgt7TbYY15VKA5hMmHKoip86Q/preview" width="640"
+				height="480" allow="autoplay"></iframe>
+
+			<div class="fig-texts">
+
+				<p>I modeled a short 3D animation of a bonfire in Blender. I achieved the fire effects primarily using a
+					material I created, incorporating Voronoi textures and color ramps. To create the ripple effect, I
+					used an icosphere with a subdivision surface and a displacement modifier applied to it, while an
+					empty object is used in the displacement modifier, and moved along the X-axis. This project aimed to
+					create a bonfire that could be used as a game or short animation, matching a cartoon or animated
+					style.</p>
+				<p>Cartoon Bonfire | 2025 | Blender</p>
+
+
+			</div>
+
+		</div>
+
+		<div id="rif-ani" class="tabcontent_2">
+			<iframe src="https://drive.google.com/file/d/1GFfuDtM2DapEQypySfewRlcBPpdtxcOD/preview" width="640"
+				height="480" allow="autoplay"></iframe>
+
+			<div class="fig-texts">
+
+				<p>A first-person animation created using the previous rifle model and an arm rig by DJMaesen on
+					Sketchfab, this is my first attempt at an FPS animation. The primary purpose was to develop my
+					skills and familiarity with rigs and bones in Blender. I added grease pencil effects in Blender to
+					the animation to give it a more cartoony look and to help hide the choppiness and unrealistic
+					aspects of the animation. I also want to eventually add a reload animation and a muzzle flash when
+					the rifle is fired.</p>
+				<p>Rifle animation | 2025 | Blender</p>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<div id="jscript" class="tabcontent_2">
+
+		<iframe src="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35/index.html" width="600"
+			height="400"></iframe>
+		<div class="fig-texts">
+			<p class="java_des">This is a game I developed using the p5 library for JavaScript. I created all the game
+				assets myself, except for the music, which I sourced from opengameart.org. This project aimed to help me
+				become accustomed to the JavaScript language. The game's objective is straightforward: you need to
+				defeat a specific number of enemies or collect a certain number of stars. I selected a hack-and-slash
+				game because it offers brevity and good replay value.</p>
+				<p>Stick Slash Tournament | 2024 | JavaScript / p5</p>
+			<a class="download_texts_java" onclick="confirm_function()"
+				href="Java/ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35.zip"
+				download="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35">Download Files</a>
+		</div>
+
+	</div>
+	<div id="py" class="tabcontent">
+
+		<div class="tab_2">
+
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'movie')"
+				id="defaultNestedOpen">Movie Code</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'state')">State
+				Code</button>
+
+		</div>
+
+		<div id="movie" class="tabcontent_2">
+			<img class="code-img" src="images/python_code_img1.png" alt="">
+
+			<div class="fig-texts">
+
+				<p>For this project, I created a Python program that calculates the total cost of movie tickets for a
+					group, factoring in a senior discount. I began by setting a flat ticket price of $12.00. The script
+					then uses the input() function to prompt the user for two pieces of information: the total number of
+					people in their party and how many of them are over 65 years old.</p>
+
+				<p>If any members of the group are seniors, the program automatically applies a 20% discount to their
+					individual ticket prices. The rest of the group pays the full price. I used simple arithmetic to
+					calculate the discounted and full-price portions, then formatted the final amount to two decimal
+					places for readability. At the end, the program prints the total amount due. A final input() call
+					pauses the program so the user can see the result before the window closes.</p>
+
+
+			</div>
+
+		</div>
+
+		<div id="state" class="tabcontent_2">
+			<img class="code-img" src="images/python_code_img2.png" alt="">
+
+			<div class="fig-texts">
+
+				<p>For this project, I was tasked with writing a Python program that allows users to look up U.S. state
+					names based on their two-letter postal abbreviations. To accomplish this, I used a pre-written file
+					called stateCd.py, which contains dictionaries mapping full state names to abbreviations and vice
+					versa. In my script, I focused on the reverse lookup feature, importing the abbrev_to_us_state
+					dictionary and using the input() function in a loop. The loop keeps prompting the user to enter a
+					state abbreviation (like "NY" or "CA") and returns the corresponding full state name (like "New
+					York" or "California") if the abbreviation is valid. If the user types "NO," the loop ends and the
+					program says goodbye.</p>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<div id="w/a" class="tabcontent">
+		<div class="tab_2">
+
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'mobile-app')"
+				id="defaultNestedOpen">Mobile App Design</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'cuny-arts')">CUNY Arts
+				Redesign</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'resp-design')">Responsive
+				Design</button>
+			<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'port-design')">Program
+				Search</button>
+
+		</div>
+
+		<div id="img_tab_links">
+
+			<div id="mobile-app" class="tabcontent_2">
+				<img src="images/screenshot2025-03-2704201.png" alt="">
 
 				<div class="fig-texts">
-					
-					<p>This is my first 3D animation project, and it was submitted to the BMMC Film Festival. The task required me to create an animation where a key is broken from a rock and used to unlock a door to a house. The atmosphere of the interior environment is inspired by an abandoned house. I developed this atmosphere using a mood board and reference images. I also created all the models and textures, which I designed in Photoshop with the paint and smudge tools to achieve a hand-painted look. The animation was rendered as PNGs and imported into After Effects for additional work, including sound and effects. I would say this project is not fully complete, as I want to address the camera clipping through the wall and slow down the animation in Cinema 4D instead of After Effects to avoid the choppiness seen in the video</p>
+					<p>I designed this app for a UX class. It addresses the need for a user-friendly scheduling tool for
+						students. At the beginning of each semester, checking your schedule can take a significant
+						amount of time. This app allows you to access your schedule and class locations quickly and
+						effortlessly. The design aims to make the process as clear as possible. It incorporates color
+						coding for classes and a straightforward card layout to maintain consistency as schedules change
+						each semester, as well as a simple map for campus buildings. Creating the app involved sketching
+						a low-fidelity prototype, which I then imported into Figma for peer user testing before
+						developing the final design.</p>
+					<p>Student Scheduler Mobile App | 2024 | Figma</p>
 
-			
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.figma.com/design/3a36ZvXG35plIv4fvHgchz/Zsabio-MMP-200-Final?m=auto&t=drT9bhxHf2YzTYuQ-1">View
+						File</a>
 				</div>
 
 			</div>
 
-			<div id="fire-ani" class="tabcontent_2">
-				<iframe src="https://drive.google.com/file/d/1kp98D--Zgt7TbYY15VKA5hMmHKoip86Q/preview" width="640" height="480" allow="autoplay"></iframe>
+			<div id="cuny-arts" class="tabcontent_2">
+				<img src="images/screenshot2025-03-27104348.png" alt="">
 
 				<div class="fig-texts">
-					
-					<p>I modeled a short 3D animation of a bonfire in Blender. I achieved the fire effects primarily using a material I created, incorporating Voronoi textures and color ramps. To create the ripple effect, I used an icosphere with a subdivision surface and a displacement modifier applied to it, while an empty object is used in the displacement modifier, and moved along the X-axis. This project aimed to create a bonfire that could be used as a game or short animation, matching a cartoon or animated style.</p>
+					<p>This is a redesign of the CUNY Arts website. The main issue I noticed was that the site utilized
+						a linear or single-page design, lacking subcategories for users to click on. This layout can
+						confuse users trying to pinpoint exactly what they want, especially regarding the museums and
+						venues that are listed on the site, which are uncategorized. To address this, I incorporated a
+						more traditional homepage featuring buttons that open the selected content to reveal additional
+						options, as well as an "about" button directly below the title, allowing users to choose whether
+						or not they want to see this content, which can help prevent information overload. This approach
+						maintained a clear design and enabled users to concentrate on specific tasks.</p>
+					<p>CUNY Arts Website Redesign | 2024 | Figma</p>
 
-					
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.figma.com/design/0QvS6MVtqCE6NJ0qaVDl4p/Midterm-(Zen)?node-id=2-6&t=kMbUzgsp6o2bVWvU-1">View
+						File</a>
 				</div>
 
 			</div>
 
-			<div id="rif-ani" class="tabcontent_2">
-				<iframe src="https://drive.google.com/file/d/1GFfuDtM2DapEQypySfewRlcBPpdtxcOD/preview" width="640" height="480" allow="autoplay"></iframe>
+			<div id="resp-design" class="tabcontent_2">
+				<img src="images/screenshot2025-03-27104313.png" alt="">
 
 				<div class="fig-texts">
-					
-					<p>A first-person animation created using the previous rifle model and an arm rig by DJMaesen on Sketchfab, this is my first attempt at an FPS animation. The primary purpose was to develop my skills and familiarity with rigs and bones in Blender. I added grease pencil effects in Blender to the animation to give it a more cartoony look and to help hide the choppiness and unrealistic aspects of the animation. I also want to eventually add a reload animation and a muzzle flash when the rifle is fired.</p>
+					<p>This is an app prototype that was created with Figma. It was developed for a movie and TV show
+						streaming service and includes multiple layouts for various screen sizes. I aimed to align it
+						with other streaming service websites while also maintaining a unique design. It drew
+						inspiration from Hulu, Max, and PBS. I employed a layout grid to ensure all components were
+						evenly spaced to create a clean, easy-to-navigate interface.</p>
+					<p>Streaming Website | 2024 | Figma</p>
 
-					
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.figma.com/design/F8K0HDjxsy4xtE88drrbEv/Design-Exercise-5-Responsive-Layout-(Copy)?node-id=1-27&t=kMbUzgsp6o2bVWvU-1">View
+						File</a>
+				</div>
+
+			</div>
+
+			<div id="port-design" class="tabcontent_2">
+				<img src="images/cuny-saerch-img.png" alt="">
+
+				<div class="fig-texts">
+
+					<p>This site is designed to search for CUNY programs related to media design and to assist
+						prospective CUNY students in finding a design or animation program at a CUNY college.</p>
+
+
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://zstuden.github.io/mmp240_Zsabio/Final/index.html">View Site</a>
 				</div>
 
 			</div>
 
 		</div>
-		<div id="jscript" class="tabcontent">
-			<div class="game_background">
-				<iframe class="game_container" src="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35/index.html" width="600" height="400"></iframe>
-			<p class="java_des">This is a brief game I developed using the p5 library for JavaScript. I created all the game assets myself, except for the music, which I sourced from opengameart.org. This project aimed to help me become accustomed to the JavaScript language. The game's objective is straightforward: you need to defeat a specific number of enemies or collect a certain number of stars. I selected a hack-and-slash game because it offers brevity and decent replay value.</p>
-				<div>
-					<a class="download_texts_java" onclick="confirm_function()" href="Java/ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35.zip" download="ZSabio_p5_assignment_Ver_12_Final_copy_2025_01_25_04_37_35">Download Files</a>
-				</div>
-			</div>
-		</div>
-		<div id="py" class="tabcontent">
+	</div>
 
-			<div class="tab_2">
+	<div class="rectangle_4_port"></div>
 
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'movie')" id="defaultNestedOpen">Movie Code</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'state')">State Code</button>
+	<div class="bttmbar">
 
-			</div>
+		<p class="mename">Designed Zen Sabio</p>
 
-			<div id="movie" class="tabcontent_2">
-				<img class="code-img" src="images/python_code_img1.png" alt="">
+	</div>
 
-				<div class="fig-texts">
-					
-					<p>For this project, I created a Python program that calculates the total cost of movie tickets for a group, factoring in a senior discount. I began by setting a flat ticket price of $12.00. The script then uses the input() function to prompt the user for two pieces of information: the total number of people in their party and how many of them are over 65 years old.</p>
+	<script>
+		function openContent(evt, contents) {
+			const allContent = document.querySelectorAll(".tabcontent, .tabcontent_2");
+			const tablinks = document.getElementsByClassName("tablinks");
 
-					<p>If any members of the group are seniors, the program automatically applies a 20% discount to their individual ticket prices. The rest of the group pays the full price. I used simple arithmetic to calculate the discounted and full-price portions, then formatted the final amount to two decimal places for readability. At the end, the program prints the total amount due. A final input() call pauses the program so the user can see the result before the window closes.</p>
+			// Hide all content blocks
+			for (let i = 0; i < allContent.length; i++) {
+				allContent[i].style.display = "none";
+			}
 
-					
-				</div>
+			// Remove 'active' class from all tab buttons
+			for (let i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
 
-			</div>
+			// Show the selected content and activate the button
+			const selectedContent = document.getElementById(contents);
+			if (selectedContent) {
+				selectedContent.style.display = "flex";
+			}
 
-			<div id="state" class="tabcontent_2">
-				<img class="code-img" src="images/python_code_img2.png" alt="">
-
-				<div class="fig-texts">
-
-					<p>For this project, I was tasked with writing a Python program that allows users to look up U.S. state names based on their two-letter postal abbreviations. To accomplish this, I used a pre-written file called stateCd.py, which contains dictionaries mapping full state names to abbreviations and vice versa. In my script, I focused on the reverse lookup feature, importing the abbrev_to_us_state dictionary and using the input() function in a loop. The loop keeps prompting the user to enter a state abbreviation (like "NY" or "CA") and returns the corresponding full state name (like "New York" or "California") if the abbreviation is valid. If the user types "NO," the loop ends and the program says goodbye.</p>
-
-					
-				</div>
-
-			</div>
-
-		</div>
-		<div id="w/a" class="tabcontent">
-			<div class="tab_2">
-
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'mobile-app')" id="defaultNestedOpen">Mobile App Design</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'cuny-arts')">CUNY Arts Redesign</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'resp-design')">Responsive Design</button>
-				<button class="tablinks" id="tab_nested_links" onclick="openNestedContent(event, 'port-design')">Program Search</button>
-
-			</div>
-
-			<div id="img_tab_links">
-				
-				<div id="mobile-app" class="tabcontent_2">
-					<img src="images/screenshot2025-03-2704201.png" alt="">
-
-					<div class="fig-texts">
-						<p><strong>Issue:</strong> Students often struggle with finding and keeping track of class schedules at the start of a new semester.</p>
-
-						<p><strong>Mission:</strong> To create an intuitive mobile app that simplifies schedule access using visual cues and a clean layout.</p>
-							
-						<p><strong>Outcome</strong>: Designed a user-friendly app with color-coded cards and consistent visuals that streamline the scheduling process.</p>
-
-						<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/3a36ZvXG35plIv4fvHgchz/Zsabio-MMP-200-Final?m=auto&t=drT9bhxHf2YzTYuQ-1">View File</a>
-					</div>
-
-				</div>
-	
-				<div id="cuny-arts" class="tabcontent_2">
-					<img src="images/screenshot2025-03-27104348.png" alt="">
-
-					<div class="fig-texts">
-						<p><strong>Issue:</strong> The original website lacked navigation clarity, placing all content on a single page and overwhelming users.</p>
-
-						<p><strong>Mission:</strong> To redesign the interface with a structured homepage and subcategories that guide users more effectively.</p>
-							
-						<p><strong>Outcome</strong>: Created a cleaner, more intuitive layout that enhances usability and allows visitors to quickly find what they need.</p>
-
-						<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/0QvS6MVtqCE6NJ0qaVDl4p/Midterm-(Zen)?node-id=2-6&t=kMbUzgsp6o2bVWvU-1">View File</a>
-					</div>
-
-				</div>
-	
-				<div id="resp-design" class="tabcontent_2">
-					<img src="images/screenshot2025-03-27104313.png" alt="">
-
-					<div class="fig-texts">
-						<p><strong>Issue:</strong>  New streaming platforms need clean, responsive designs that work across devices while offering a unique identity.</p>
-
-						<p><strong>Mission:</strong> To design a responsive website for a streaming service that blends familiar layouts with original design touches.</p>
-							
-						<p><strong>Outcome</strong> Produced a flexible layout system inspired by major platforms, supported by a structured grid for visual clarity.</p>
-
-						<a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/F8K0HDjxsy4xtE88drrbEv/Design-Exercise-5-Responsive-Layout-(Copy)?node-id=1-27&t=kMbUzgsp6o2bVWvU-1">View File</a>
-					</div>
-
-				</div>
-	
-				<div id="port-design" class="tabcontent_2">
-					<img src="images/cuny-saerch-img.png" alt="">
-
-					<div class="fig-texts">
-
-						<p>This site is designed to search for CUNY programs related to media design and to assist prospective CUNY students in finding a design or animation program at a CUNY college.</p>
+			evt.currentTarget.className += " active";
+		}
 
 
-						<a target="_blank" rel="noopener noreferrer" href="https://zstuden.github.io/mmp240_Zsabio/Final/index.html">View Site</a>
-					</div>
+		function openNestedContent(evt, contents) {
+			var i, tabcontent_2, tablinks;
 
-				</div>
-				
-			</div>
-		</div>
+			tabcontent = document.getElementsByClassName("tabcontent_2");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
 
-		<div class="rectangle_4_port"></div>
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
 
-<div class="bttmbar">
+			document.getElementById(contents).style.display = "flex";
+			evt.currentTarget.className += " active";
+		}
 
-	<p class="mename">Designed Zen Sabio</p>
+		document.getElementById("defaultOpen").click();
 
-</div>
+		const panels = document.querySelectorAll(".img_panel");
 
-<script>
-	function openContent(evt, contents) {
-  var i, tabcontent, tablinks;
+		panels.forEach((panel) => {
+			panel.addEventListener("click", () => {
+				removeActiveClasses();
+				panel.classList.add("active");
+			});
+		});
 
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(contents).style.display = "flex";
-  evt.currentTarget.className += " active";
-}
-
-function openNestedContent(evt, contents) {
-  var i, tabcontent_2, tablinks;
-
-  tabcontent = document.getElementsByClassName("tabcontent_2");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(contents).style.display = "flex";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
-
-const panels = document.querySelectorAll(".img_panel");
-
-panels.forEach((panel) => {
-	panel.addEventListener("click", () => {
-		removeActiveClasses();
-		panel.classList.add("active");
-	});
-});
-
-function removeActiveClasses() {
-	panels.forEach((panel) => {
-		panel.classList.remove("active");
-	})
-}
-</script>
+		function removeActiveClasses() {
+			panels.forEach((panel) => {
+				panel.classList.remove("active");
+			})
+		}
+	</script>
 
 </body>
 
