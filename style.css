@@ -575,9 +575,7 @@ ul {
 	max-width: 640px;
 	width: 100%;
 	aspect-ratio: 16 / 9;
-	/* Maintain proper video shape */
 	border: none;
-	border-radius: 10px;
 }
 
 .imgs_container {
