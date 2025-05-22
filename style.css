@@ -67,7 +67,7 @@ main {
 
 .top_nav_links a img {
 	width: 40px;
-    position: absolute;
+	position: absolute;
 }
 
 .top_nav_links_ind {
@@ -226,28 +226,14 @@ main {
 	max-width: 716px;
 }
 
-.res_img_main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 300px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.res_img_shadow {
-	display: inline-block;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-	border-radius: 8px;
-	margin: 0;
-	padding: 10px;
-	background-color: #d6d6d6;
-}
-
 .res_img_shadow img {
-	display: block;
+	display: flex;
+	width: 40%;
 	max-width: 100%;
 	border-radius: 8px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .res_img_small_main {
@@ -778,23 +764,20 @@ ul {
 }
 
 .about_container {
-	float: right;
 	display: flex;
-	width: 40%;
-	margin-right: 3%;
+	flex-wrap: wrap;
+	margin: 150px 90px auto;
+	padding: 0px 160px;
+	background-color: #000000c5;
 }
 
 .about_des {
-	padding: 4%;
-	padding-top: 10%;
-	padding-bottom: 30%;
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 300;
-	font-size: clamp(22px, 3.5vw, 36px);
+	font-size: 1.8em;
 	line-height: 150.105%;
 	color: #ffffff;
-	background-color: #000000a4;
 }
 
 .about_img {
@@ -901,7 +884,7 @@ ul {
 li.dropdown ul {
 	display: none;
 	position: absolute;
-	top: 100%; 
+	top: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: white;
@@ -929,7 +912,7 @@ li.dropdown:hover ul {
 	text-align: center;
 	font-family: Quicksand;
 	font-weight: 600;
-  }
+}
 
 /* .tabcontent_2 img.code-img  {
 	width: 100%;
@@ -948,63 +931,63 @@ li.dropdown:hover ul {
 	}
 
 
-	 .home_content_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
+	.home_content_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+	}
 
-  .header_container {
-    padding-top: 20px;
-  }
+	.header_container {
+		padding-top: 20px;
+	}
 
-  .header_name {
-    font-size: 2em;
-    padding-left: 0;
-  }
+	.header_name {
+		font-size: 2em;
+		padding-left: 0;
+	}
 
-  .body {
-    width: 100%;
-    padding-left: 0;
-    font-size: 1.1em;
-    margin-top: 10px;
-  }
+	.body {
+		width: 100%;
+		padding-left: 0;
+		font-size: 1.1em;
+		margin-top: 10px;
+	}
 
-  .home_pg_txt {
-    font-size: 1.1em;
-    line-height: 1.5em;
-  }
+	.home_pg_txt {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
 
-  .underlinks {
-    flex-direction: row;
-    align-items: center;
-	margin: 0%;
-	justify-content: space-between;
-  }
+	.underlinks {
+		flex-direction: row;
+		align-items: center;
+		margin: 0%;
+		justify-content: space-between;
+	}
 
-  .underlinks li {
-    line-height: normal;
-    margin: 10px 0;
-  }
+	.underlinks li {
+		line-height: normal;
+		margin: 10px 0;
+	}
 
-  .homeimg {
-    padding: 0;
-    width: 100%;
-    max-width: 320px;
-    margin-top: 20px;
-	display: none;
-  }
+	.homeimg {
+		padding: 0;
+		width: 100%;
+		max-width: 320px;
+		margin-top: 20px;
+		display: none;
+	}
 
-  .homeimg img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+	.homeimg img {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
 
-/*   .top_nav_links {
+	/*   .top_nav_links {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -1014,18 +997,18 @@ li.dropdown:hover ul {
 	overflow: visible;
   } */
 
-  .top_nav_links_ind {
-    word-spacing: normal;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
+	.top_nav_links_ind {
+		word-spacing: normal;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+	}
 
-  .bttmbar {
-    font-size: 0.9em;
-    text-align: center;
-    padding: 10px 0;
-  }
+	.bttmbar {
+		font-size: 0.9em;
+		text-align: center;
+		padding: 10px 0;
+	}
 
 	.body p {
 		width: fit-content;
@@ -1077,6 +1060,7 @@ li.dropdown:hover ul {
 	.res_img_shadow {
 		display: none;
 	}
+
 	.rectangle {
 		display: none;
 	}
@@ -1138,7 +1122,7 @@ li.dropdown:hover ul {
 	.fig-texts {
 		width: 100%;
 		max-width: 600px;
-		margin-bottom: 15%; 
+		margin-bottom: 15%;
 		padding: 15px 20px;
 	}
 
